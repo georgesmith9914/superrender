@@ -1,0 +1,25 @@
+{
+    "description": "This Dapp renders the Blender files using IExec",
+    "license": "MIT",
+    "author": "George Smith",
+    "social": {
+      "website": "?",
+      "github": "?"
+    },
+    "logo": "logo.png",
+    "buyConf": {
+      "params": {
+        "iexec_args": ""
+      },
+      "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "trust": "0",
+      "callback": "0x0000000000000000000000000000000000000000"
+    },
+    "app": {
+      "owner": "0xdd8Ae1955A6E3aE6d82391207a012b13008BeeB6",
+      "name": "blender-render",
+      "type": "DOCKER",
+      "multiaddr": "docker.io/georgesmith9914/blender-render:1.0.0",
+      "checksum": "0x41f0afc65b56df380e0afb42fc8be173ee46dde97e22368cad362746104cdb88"
+    }
+  }
