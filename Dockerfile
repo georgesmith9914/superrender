@@ -1,31 +1,26 @@
 FROM ubuntu:xenial
 
 RUN apt-get update && \
-	apt-get install -y \
-		curl \
-		bzip2 \
-		imagemagick \
-		libfreetype6 \
-		libgl1-mesa-dev \
-		libglu1-mesa \
-		libxi6 \
-		libxrender1 && \
-	apt-get -y autoremove && \
-	rm -rf /var/lib/apt/lists/*
+        apt-get install -y \
+                curl \
+                libfreetype6 \
+                libglu1-mesa \
+                libxi6 \
+                libxrender1 \
+                xz-utils && \
+        apt-get -y autoremove && \
+        rm -rf /var/lib/apt/lists/*
 
-ENV BLENDER_MAJOR 2.79
-ENV BLENDER_VERSION 2.79
-ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_MAJOR/blender-$BLENDER_VERSION-linux-glibc219-x86_64.tar.bz2
+ENV BLENDER_MAJOR 2.82
+ENV BLENDER_VERSION 2.82a
+ENV BLENDER_URL https://download.blender.org/release/Blender${BLENDER_MAJOR}/blender-${BLENDER_VERSION}-linux64.tar.xz
 
-RUN mkdir /usr/local/blender && \
-	curl -SL "$BLENDER_BZ2_URL" -o blender.tar.bz2 && \
-	tar -jxvf blender.tar.bz2 -C /usr/local/blender --strip-components=1 && \
-	rm blender.tar.bz2
-
-VOLUME /media
+RUN curl -L ${BLENDER_URL} | tar -xJ -C /usr/local/ && \
+        mv /usr/local/blender-${BLENDER_VERSION}-linux64 /usr/local/blender
 
 RUN cd /
 COPY script.sh script.sh
 
-ENTRYPOINT ["/script.sh"]
+CMD blender
 
+ENTRYPOINT ["/script.sh"]
