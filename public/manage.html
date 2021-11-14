@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>SuperRender</title>
+</head>
+
+<!--main navbar-->
+
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">abc</span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="./img/SuperRender.PNG" alt="..." height="50">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="render.html">Start Render</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link  text-primary" href="manage.html">Manage Renders</a>
+          </li>
+          </ul>
+          <button class="btn btn-secondary btn-lg connect-wallet-btn">Connect Wallet</button>
+          <!--<button class="btn btn-primary btn-lg">Connected</button>-->
+          <i class="fas fa-user-circle fa-lg ml-3"></i>
+            <!--<button class="btn btn-secondary btn-lg connect-wallet-btn">Connect Wallet</button>-->
+        
+        </div>
+      </nav>
+      <!--text section-->
+
+    <section class="">
+      <div class="container">
+
+      </div>
+      <div class="mt-5">
+        <h5 class="font-weight-bold">List of Render Jobs</h5>
+        <table class="table table-bordered">
+          <thead>
+          </thead>
+          <tbody>
+         
+            <tr style="height: 50px;font-weight: bold;">
+              <td>Job ID</td>
+              <td>Input file</td>
+              <td>Task ID</td>
+              <td>Status</td>
+              <td>Output file</td>
+            </tr>
+            <tr style="height: 50px;">
+              <td>1</td>
+              <td>blendfile.blend</td>
+              <td>0x36f6616678d5cb523cf808e6ef623aef6fac2c658db4ec2c03444c034e8d5663</td>
+              <td>In-Progress</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr style="height: 50px;">
+              <td>2</td>
+              <td>vworld.blend</td>
+              <td>0x41f6616678d5cb523cf808e6ef623aegh6fac2c658db4ec2c03444c034e8d567</td>
+              <td>Complete</td>
+              <td><a href="#">vworld.png</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+    </section>
+
+  
+
+    <!--boxes-->
+
+       
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.0/web3.min.js" integrity="sha512-+BhnLgfzIDDjssoEWHPmdgWRvbwIEdj0Xfiys7uSqfQWpMEOJ4ymJ88O6B1cB0j+4zjb5GhO+sb/kEicggvUQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src=js/asset-manager.js></script>
+</body>
+</html>

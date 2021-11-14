@@ -1,0 +1,30 @@
+{
+  "name": "monaliza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://georgesmith9914@github.com/monalizatokens/monaliza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monalizatokens/monaliza/issues"
+  },
+  "homepage": "https://github.com/monalizatokens/monaliza#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "npm": "^7.5.4",
+    "request": "^2.88.2"
+  }
+}
