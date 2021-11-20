@@ -1,6 +1,10 @@
 # SuperRender
 Dapp to render Blender files using IExec.
 
+![image](https://user-images.githubusercontent.com/83978018/142742445-aca27e14-25f9-43b1-8e7e-eb2a68fdc183.png)  
+
+![image](https://user-images.githubusercontent.com/83978018/142742463-8caa0189-ed1d-4601-b2d7-71c6b2502230.png)   
+
 Steps to execute it on docker and deploy to IExec:  
 1. Place a test blender file named blendfile.blend in /tmp/iexec_in in local VM  
 2. chmod +x script.sh  
