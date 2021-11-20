@@ -24,6 +24,10 @@ Step to run Dapp:
 1. npm install  
 2. Update local scret.json  
 3. npm run dev  
+4. Open browser on port http://localhost:3000
+5. Upload a blender file, enter frame number and start rendering
+6. Check status of task by using URL https://v6.core.prod-main-pool.viviani.iex.ec/tasks/<task id>    
+e.g.,  https://v6.core.prod-main-pool.viviani.iex.ec/tasks/0x71da3e95a2fe5a9c2ae8cb133b9cf658a68dced4b106f34523313ad46035c044   
 
 
 
