@@ -18,12 +18,23 @@ Steps to execute it on docker and deploy to IExec:
 9. nano iexec.json and change value of checksum from above and app multiaddr to "docker.io/georgesmith9914/blender-render:1.0.9"  
 10. iexec app deploy --chain viviani  
 11. iexec app publish --chain viviani  
-12. Note down app 0x address  
+12. Note down app 0x address    
+
+Steps to prepare your Metamask wallet:  
+1. Create a wallet using IExec SDK command line  
+2. Get some nRLC to your wallet  
+3. Import this wallet into Metamask using private key  
+4. Add Viviani chain and its RPC to Metamask
+5. Choose Viviani chain on Metamask    
 
 Step to run Dapp:
 1. npm install  
 2. Update local scret.json  
 3. npm run dev  
+4. Open browser on port http://localhost:3000
+5. Upload a blender file, enter frame number and start rendering
+6. Check status of task by using URL https://v6.core.prod-main-pool.viviani.iex.ec/tasks/<task id>    
+e.g.,  https://v6.core.prod-main-pool.viviani.iex.ec/tasks/0x71da3e95a2fe5a9c2ae8cb133b9cf658a68dced4b106f34523313ad46035c044   
 
 
 
