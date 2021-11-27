@@ -10,7 +10,7 @@
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
     "build-watch": "parcel watch ./index.html",
     "start-watch": "nodemon index.js",
-    "nodemon": "2.0.15"
+    "nodemon": "2.0.15" 
   },
   "dependencies": {
     "@pinata/sdk": "^1.1.23",
