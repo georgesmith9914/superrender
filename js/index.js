@@ -121,7 +121,7 @@ const render = (iexec) => async () => {
         console.log(fileURL);
         console.log(await iexec.wallet.getAddress())
         docbody.classList.add("waiting");
-        const appAddress = "0xB41F2ca7d810345F2034939ecdFc42329706413E";
+        const appAddress = "0x42cF01a1BCe15A895714b6BF1C5567A92f008A9e";
         const category = "0";
         const params = {
             "iexec_input_files": [fileURL],
